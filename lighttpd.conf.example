@@ -1,0 +1,10 @@
+$HTTP["host"] =~ "^(.+\.)?(ohrensessel\.net)$" {
+url.rewrite-once = (
+    "^/ffhh/graph/([a-zA-Z0-9]+)/(hour|day|week|month|year)" => "/ffhh/graphs/$1_$2.png",
+    "^/ffhh/view/([a-zA-Z0-9]+)" => "/ffhh/node.php?node=$1",
+    "^/ffhh/name/([a-zA-Z0-9-_:]+)" => "/ffhh/name.php?node=$1",
+    "^/ffhh/total" => "/ffhh/total.php",
+    "^/ffhh/summary/([a-z]*)" => "/ffhh/summary.php?periode=$1",
+    "^/ffhh/stats" => "/ffhh/analysis.php"
+)
+}
