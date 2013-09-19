@@ -1,0 +1,29 @@
+figure, aside {
+    float:left;
+}
+aside {
+    width:481px;
+    padding:5px;
+}
+footer, figure, aside {
+    margin:5px;
+}
+br {
+    clear: both;
+}
+footer, nav {
+    font-size:small;
+}
+footer {
+    width:1004px;
+}
+nav ul li {
+    display:inline;
+    margin-right:5px;
+}
+.offline {
+    text-align:right;
+}
+td {
+    padding-left:5px;
+}
